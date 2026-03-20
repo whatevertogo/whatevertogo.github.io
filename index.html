@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>whatevertogo</title>
+    <meta
+      name="description"
+      content="A bilingual personal site for whatevertogo, focused on AI-assisted tooling, Unity systems, and practical developer workflows."
+    />
+    <meta name="theme-color" content="#f3ede1" />
+    <script>
+      // Only enable reveal-on-scroll when JavaScript is alive; otherwise keep all content visible.
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" data-reveal>
+        <a class="brand" href="#top">whatevertogo</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#about" data-copy="nav-about">About</a>
+          <a href="#work" data-copy="nav-work">Focus</a>
+          <a href="#stack" data-copy="nav-stack">Stack</a>
+          <a href="#contact" data-copy="nav-contact">Contact</a>
+        </nav>
+        <div class="language-switch" aria-label="Language switcher">
+          <button type="button" class="language-button is-active" data-language-button="en">
+            EN
+          </button>
+          <button type="button" class="language-button" data-language-button="zh">中</button>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero" data-reveal>
+          <div class="hero-copy">
+            <p class="eyebrow" data-copy="hero-eyebrow">Personal site</p>
+            <h1 data-copy="hero-title">
+              Building calmer bot workflows with AstrBot, astrbot-sdk, and deliberate tooling.
+            </h1>
+            <p class="hero-text" data-copy="hero-text">
+              I am a student developer in Chengdu, currently focused on the AstrBot ecosystem,
+              astrbot-sdk integrations, and bot-side software that stays useful beyond setup.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-link" href="https://github.com/whatevertogo" target="_blank" rel="noreferrer">
+                <span data-copy="hero-primary">View GitHub</span>
+              </a>
+              <a class="secondary-link" href="mailto:1879483647@qq.com">
+                <span data-copy="hero-secondary">Email me</span>
+              </a>
+            </div>
+          </div>
+
+          <aside class="hero-panel">
+            <p class="panel-kicker" data-copy="panel-kicker">Current direction</p>
+            <ul class="panel-list">
+              <li data-copy="panel-item-1">AstrBot ecosystem workflows</li>
+              <li data-copy="panel-item-2">astrbot-sdk integrations and extension boundaries</li>
+              <li data-copy="panel-item-3">Plugins, adapters, and bot-side operations</li>
+            </ul>
+          </aside>
+        </section>
+
+        <section id="about" class="section" data-reveal>
+          <div class="section-heading">
+            <p class="eyebrow" data-copy="about-eyebrow">About</p>
+            <h2 data-copy="about-title">
+              Most of my recent energy goes into bot platforms, not generic portfolio projects.
+            </h2>
+          </div>
+          <div class="section-grid">
+            <div class="prose">
+              <p data-copy="about-body-1">
+                My current work is less about showing a long repo list and more about going deep on
+                the AstrBot ecosystem, bot automation, and the developer experience around them.
+              </p>
+              <p data-copy="about-body-2">
+                That means SDK integrations, plugin and adapter patterns, dashboard workflows, and
+                documentation that helps people ship instead of getting stuck in setup.
+              </p>
+            </div>
+            <div class="principles-card">
+              <p class="panel-kicker" data-copy="principles-eyebrow">Principles</p>
+              <ul class="principles-list">
+                <li data-copy="principle-1">Build for repeated use, not one-off demos.</li>
+                <li data-copy="principle-2">Fix root causes instead of masking them.</li>
+                <li data-copy="principle-3">Keep interfaces readable for both humans and tools.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="work" class="section" data-reveal>
+          <div class="section-heading">
+            <p class="eyebrow" data-copy="work-eyebrow">Current focus</p>
+            <h2 data-copy="work-title">
+              Recent work centered on AstrBot, astrbot-sdk, and the surrounding tooling.
+            </h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <p class="project-type" data-copy="project-1-type">Ecosystem</p>
+              <h3>AstrBot</h3>
+              <p data-copy="project-1-body">
+                This is the part of the stack I spend the most time around: deployment, dashboard
+                flows, plugins, multi-platform integration, and operational details that matter in
+                real use.
+              </p>
+              <a href="https://github.com/AstrBotDevs/AstrBot" target="_blank" rel="noreferrer">
+                <span data-copy="project-link">View reference</span>
+              </a>
+            </article>
+
+            <article class="project-card">
+              <p class="project-type" data-copy="project-2-type">SDK</p>
+              <h3>astrbot-sdk</h3>
+              <p data-copy="project-2-body">
+                I care about integrations built around astrbot-sdk staying readable, maintainable,
+                and usable for real development instead of collapsing into fragile glue code.
+              </p>
+              <a href="https://docs.astrbot.app/" target="_blank" rel="noreferrer">
+                <span data-copy="project-link">View reference</span>
+              </a>
+            </article>
+
+            <article class="project-card">
+              <p class="project-type" data-copy="project-3-type">Extensions</p>
+              <h3>Plugins &amp; Adapters</h3>
+              <p data-copy="project-3-body">
+                A lot of practical work lives in plugin architecture, platform adapters, and
+                capability wiring, where maintainability matters more than quick hacks.
+              </p>
+              <a href="https://docs.astrbot.app/" target="_blank" rel="noreferrer">
+                <span data-copy="project-link">View reference</span>
+              </a>
+            </article>
+
+            <article class="project-card">
+              <p class="project-type" data-copy="project-4-type">Operations</p>
+              <h3>Docs &amp; Setup Flows</h3>
+              <p data-copy="project-4-body">
+                Good bot tooling depends on good setup and operational guidance. I pay attention to
+                docs because usability breaks long before code does.
+              </p>
+              <a href="https://astrbot.app/" target="_blank" rel="noreferrer">
+                <span data-copy="project-link">View reference</span>
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <section id="stack" class="section" data-reveal>
+          <div class="section-heading">
+            <p class="eyebrow" data-copy="stack-eyebrow">Stack</p>
+            <h2 data-copy="stack-title">The tools, interfaces, and working habits I keep returning to.</h2>
+          </div>
+          <div class="stack-grid">
+            <div class="stack-column">
+              <p class="stack-label" data-copy="stack-label-1">Languages</p>
+              <div class="chip-row">
+                <span class="chip">Python</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+                <span class="chip">Markdown</span>
+              </div>
+            </div>
+            <div class="stack-column">
+              <p class="stack-label" data-copy="stack-label-2">Domains</p>
+              <div class="chip-row">
+                <span class="chip">AstrBot</span>
+                <span class="chip">astrbot-sdk</span>
+                <span class="chip">MCP</span>
+                <span class="chip">Bot Automation</span>
+                <span class="chip">Developer Docs</span>
+              </div>
+            </div>
+            <div class="stack-column">
+              <p class="stack-label" data-copy="stack-label-3">Working style</p>
+              <div class="chip-row">
+                <span class="chip" data-copy="stack-style-1">Semantic naming</span>
+                <span class="chip" data-copy="stack-style-2">Root-cause fixes</span>
+                <span class="chip" data-copy="stack-style-3">Explicit logs</span>
+                <span class="chip" data-copy="stack-style-4">Why-first documentation</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section writing-section" data-reveal>
+          <div class="section-heading">
+            <p class="eyebrow" data-copy="writing-eyebrow">Writing</p>
+            <h2 data-copy="writing-title">Public notes and write-ups are still being curated.</h2>
+          </div>
+          <p class="writing-copy" data-copy="writing-body">
+            I am still organizing what is worth publishing. When that work is ready, this section
+            will become the public home for it.
+          </p>
+        </section>
+
+        <section id="contact" class="section contact-section" data-reveal>
+          <div class="section-heading">
+            <p class="eyebrow" data-copy="contact-eyebrow">Contact</p>
+            <h2 data-copy="contact-title">If the work resonates, reach out.</h2>
+          </div>
+          <div class="contact-grid">
+            <a class="contact-card" href="mailto:1879483647@qq.com">
+              <span class="contact-label" data-copy="contact-email-label">Email</span>
+              <span class="contact-value">1879483647@qq.com</span>
+            </a>
+            <a class="contact-card" href="https://github.com/whatevertogo" target="_blank" rel="noreferrer">
+              <span class="contact-label" data-copy="contact-github-label">GitHub</span>
+              <span class="contact-value">github.com/whatevertogo</span>
+            </a>
+            <a
+              class="contact-card"
+              href="https://whatevertogo.github.io"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="contact-label" data-copy="contact-site-label">Website</span>
+              <span class="contact-value">whatevertogo.github.io</span>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" data-reveal>
+        <p data-copy="footer-copy">
+          Built with plain HTML, CSS, and JavaScript so the site stays inspectable, portable, and
+          easy to change.
+        </p>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
